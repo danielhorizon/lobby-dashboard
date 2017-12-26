@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Software Dashboard</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" />
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css'>
+
+    <style>
+      .dc-select-menu {
+        width: 100%;
+      }
+
+      @font-face {
+        font-family: 'Calibre';
+        src:url(CalibreWeb-Regular.woff);
+      }
+
+      html, body {
+        font-family:'Calibre';
+      }
+    </style>
+  </head>
+  <body>
+
+<div style="display: flex; flex-direction: row">
+  <div style="flex-shrink: 0; min-width: 160px; background: url(sidebar.png) top left no-repeat rgb(57, 63, 74)">
+  </div>
+  <div style="flex-grow: 1">
+    <div style="height:50px; background: url(header.png) top left no-repeat rgb(83, 87, 94)">
+    </div>
+    <div class = 'container-fluid'>
+      <div class="row p-a-md">
+        <div class='bar-graph col' id="print-count-chart"> 
+          <h4 align="center"  > Print Count </h4>
+        </div>
+
+        <div class='bar-graph col' id="resin-chart"> 
+          <h4 align="center">Resins by Volume</h4>
+        </div>
+
+        <div class='bar-graph col' id="rating-bar-chart"> 
+          <h4 align="center">Rating Breakdown</h4>
+        </div>
+
+        <div class='bar-graph col' id="print-time-chart"> 
+          <h4 align="center"> Print Time </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="min-width: 160px; background-color: #eee; display: flex; flex-grow:0; flex-direction: column">
+      <div id="printer-select"></div>
+      <div id="user-select"></div>
+            
+</div>
+      
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/qs/6.5.0/qs.min.js"> </script>
+
+    
+<script src="index3.js"></script>
+
+  </body>
+</html>
